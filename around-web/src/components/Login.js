@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import $ from 'jquery';
 import { API_ROOT} from "../constants"
 
+
+
 class NormalLoginForm extends React.Component {
     handleSubmit = (e) => {
         e.preventDefault();
@@ -39,6 +41,11 @@ class NormalLoginForm extends React.Component {
     render() {
         const { getFieldDecorator } = this.props.form;
         return (
+            <div>
+                <h1 >Please Login</h1>
+                <p>Welcome back<br/>
+                    Please sign in with your account</p>
+
             <Form onSubmit={this.handleSubmit} className="login-form">
                 <Form.Item>
                     {getFieldDecorator('username', {
@@ -61,6 +68,7 @@ class NormalLoginForm extends React.Component {
                     Or <Link to="/register">register now!</Link>
                 </Form.Item>
             </Form>
+            </div>
         );
     }
 }

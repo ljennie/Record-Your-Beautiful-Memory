@@ -86,48 +86,52 @@ class RegisterationForm extends React.Component {
         };
 
         return (
-            <Form className="register-form" {...formItemLayout} onSubmit={this.handleSubmit}>
-                <Form.Item
-                    label="Username"
-                >
-                    {getFieldDecorator('username', {
-                        rules: [{required: true, message: 'Please input your nickname!', whitespace: true}],
-                    })(
-                        <Input/>
-                    )}
-                </Form.Item>
-                <Form.Item
-                    label="Password"
-                >
-                    {getFieldDecorator('password', {
-                        rules: [{
-                            required: true, message: 'Please input your password!',
-                        }, {
-                            validator: this.validateToNextPassword,
-                        }],
-                    })(
-                        <Input type="password"/>
-                    )}
-                </Form.Item>
-                <Form.Item
-                    label="Confirm Password"
-                >
-                    {getFieldDecorator('confirm', {
-                        rules: [{
-                            required: true, message: 'Please confirm your password!',
-                        }, {
-                            validator: this.compareToFirstPassword,
-                        }],
-                    })(
-                        <Input type="password" onBlur={this.handleConfirmBlur}/>
-                    )}
-                </Form.Item>
+            <div>
+                <h1>Make the most beautiful memory in your life</h1>
+                <p>Please register your account</p>
+                <Form className="register-form" {...formItemLayout} onSubmit={this.handleSubmit}>
+                    <Form.Item
+                        label="Username"
+                    >
+                        {getFieldDecorator('username', {
+                            rules: [{required: true, message: 'Please input your nickname!', whitespace: true}],
+                        })(
+                            <Input/>
+                        )}
+                    </Form.Item>
+                    <Form.Item
+                        label="Password"
+                    >
+                        {getFieldDecorator('password', {
+                            rules: [{
+                                required: true, message: 'Please input your password!',
+                            }, {
+                                validator: this.validateToNextPassword,
+                            }],
+                        })(
+                            <Input type="password"/>
+                        )}
+                    </Form.Item>
+                    <Form.Item
+                        label="Confirm Password"
+                    >
+                        {getFieldDecorator('confirm', {
+                            rules: [{
+                                required: true, message: 'Please confirm your password!',
+                            }, {
+                                validator: this.compareToFirstPassword,
+                            }],
+                        })(
+                            <Input type="password" onBlur={this.handleConfirmBlur}/>
+                        )}
+                    </Form.Item>
 
-                <Form.Item {...tailFormItemLayout}>
-                    <Button type="primary" htmlType="submit">Register</Button>
-                    <p>I already have an account, go back to <Link to="/login">login</Link></p>
-                </Form.Item>
-            </Form>
+                    <Form.Item {...tailFormItemLayout}>
+                        <Button type="primary" htmlType="submit">Register</Button>
+                        <p>I already have an account, go back to <Link to="/login">login</Link></p>
+                    </Form.Item>
+                </Form>
+            </div>
         );
     }
 }
