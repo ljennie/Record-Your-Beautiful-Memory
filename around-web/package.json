@@ -18,9 +18,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "cp ./src/config.js ./src/config.bak.js && cp ./src/config-prod.js ./src/config.js && node ./scripts/build.js && mv ./src/config.bak.js ./src/config.js",
-    "deploy": "aws s3 cp --recursive ./build s3://recordyourbeautifulmemory.com",
-    "test": "react-scripts test"
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "deploy": "aws s3 cp --recursive ./build s3://recordyourbeautifulmemory.com"
+
   },
   "eslintConfig": {
     "extends": "react-app"
