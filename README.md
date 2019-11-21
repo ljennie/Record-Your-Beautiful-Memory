@@ -1,9 +1,9 @@
 # Record-Your-Beautiful-Memory
 
 Main page & Login Page
-![main_page_1](https://user-images.githubusercontent.com/40128001/64048366-1e176400-cb37-11e9-9ea6-a7db3535e813.jpg)
+![1](https://user-images.githubusercontent.com/40128001/69378248-a8bdba00-0c73-11ea-8d48-579e9d22a960.jpg)
 
-![memory_login_page](https://user-images.githubusercontent.com/40128001/64048378-296a8f80-cb37-11e9-9036-fc94378f4f1f.jpg)
+![2](https://user-images.githubusercontent.com/40128001/69378304-c12dd480-0c73-11ea-98a3-d164a4668771.jpg)
 
 When you login, you will see three buttons, image posts, video posts, and map. You can see image/video posts by other people.
 ![6](https://user-images.githubusercontent.com/40128001/64213048-1f1aff00-ce71-11e9-8d7d-cd8936f7d16e.jpg)
